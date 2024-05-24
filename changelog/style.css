@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    user-select: none;
+    color: #474747;
+}
+
+/* Navbar style*/
+header{
+    box-shadow: 0 0 20px 0 #dddddd;
+    padding: 10px 10px 10px 10px;
+    background-color: #ffffff;
+    nav {
+        justify-content: space-between;
+        padding: 20px 20px 20px 20px;
+        align-items: center;
+        height: 70px;
+        display: flex;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline;
+                a {
+                    text-decoration: none;
+                    margin-right: 20px;
+                    color: #474747;
+                }
+                a:hover {
+                    color: #dddddd;
+                }
+                .selected {
+                    background-color: #e0e0e076;
+                    padding: 5px 15px 5px 15px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .logo {
+            color: #474747;
+            margin: 0;
+        }
+    }
+}
+/* Navbar end */
+
+/* changelog cards */
+.main-container {
+    justify-content: center;
+    .log-card {
+        box-shadow: #dddddd 0px 0px 5px 0px;
+        padding: 15px 15px 15px 15px;
+        border-radius: 10px;
+        margin-top: 25px;
+        text-align: left;
+        width: 80%;
+        .contents {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+    }
+}
+/* cards end */
+
+/* responsive */
+@media screen and (max-width: 768px){
+    .main-container {
+        .log-card {
+            margin-top: 20px;
+            width: 85%;
+        }
+    }
+}
+/* responsive end */

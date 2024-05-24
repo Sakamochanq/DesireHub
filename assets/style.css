@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    user-select: none;
+    color: #474747;
+}
+
+/* Navbar style*/
+header{
+    box-shadow: 0 0 20px 0 #dddddd;
+    padding: 10px 10px 10px 10px;
+    background-color: #ffffff;
+    nav {
+        justify-content: space-between;
+        padding: 20px 30px 20px 20px;
+        align-items: center;
+        height: 70px;
+        display: flex;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline;
+                a {
+                    text-decoration: none;
+                    margin-right: 20px;
+                    color: #474747;
+                }
+                a:hover {
+                    color: #dddddd;
+                }
+                .selected {
+                    background-color: #e0e0e076;
+                    padding: 5px 10px 5px 10px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .logo {
+            color: #474747;
+            margin: 0;
+        }
+    }
+}
+/* Navbar end */
+
+/* changelog cards */
+.main-container {
+    justify-content: center;
+    .debug-wrapper {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+    .item-card {
+        box-shadow: #dddddd 0px 0px 5px 0px;
+        padding: 15px 15px 15px 15px;
+        border-radius: 10px;
+        margin-top: 25px;
+        text-align: left;
+        display: flex;
+        width: 80%;
+        .status {
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            margin-right: 10px;
+            margin-top: 5px;
+            height: 20px;
+            width: 20px;
+        }
+        /* Color Set */
+        .high { background-color: rgba(255, 0, 0, 0.5); }
+        .medium { background-color: rgba(222, 222, 0, 0.6); }
+        .low { background-color: rgba(0, 128, 0, 0.5); }
+        /* Color Set end */
+
+        .item {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        .value {
+            margin-left: 10%;
+            margin-top: 5px;
+        }
+    }
+}
+/* cards end */
+
+/* responsive */
+@media screen and (max-width: 768px){
+    .main-container {
+        .item-card {
+            margin-top: 15px;
+            width: 85%;
+            .item {
+                margin-top: 3px;
+            }
+        }
+    }
+}
+/* responsive end */
