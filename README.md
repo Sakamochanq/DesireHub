@@ -21,7 +21,7 @@ Describe what you want yourself based on [**Template.json**](
 https://github.com/Sakamochanq/DesireHub/blob/master/assets/list/Template.json).  
 You will need to put the json file in the following directory.  
 
-`./aasets/list/data.json`
+`./assets/list/data.json`
 
 ```json
 [
